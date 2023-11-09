@@ -18,11 +18,11 @@ module.exports = () => {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
-      plugins: [
         // Webpack plugin that generates our html file and injects our bundles. 
         new HtmlWebpackPlugin({
           template: './index.html',
           title: 'J.A.T.E'
+          
         }),
        
         // Injects our custom service worker
@@ -51,7 +51,6 @@ module.exports = () => {
           ],
         }),
       ],
-    ],
 
     module: {
       rules: [
